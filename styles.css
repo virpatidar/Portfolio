@@ -1,0 +1,204 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    scroll-behavior: smooth;
+  }
+  
+  /* Header styles */
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  header img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  header img:hover {
+    transform: scale(1.05);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #2c3e50;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Sections */
+  section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+  }
+  
+  section.fade-in-delay {
+    animation-delay: 0.5s;
+  }
+  
+  /* Project Cards */
+  .project-card {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #3498db;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card h3 {
+    color: #2c3e50;
+  }
+  
+  .project-card a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Skills */
+  #skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  #skills li {
+    background: #3498db;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  #skills li:hover {
+    background: #2980b9;
+  }
+  
+  /* Education */
+  #education ul {
+    list-style-type: none;
+  }
+  
+  #education li {
+    margin-bottom: 25px;
+  }
+  
+  #education h3 {
+    color: #2c3e50;
+  }
+  
+  /* Certificates */
+  #certificates a {
+    color: #27ae60;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  #certificates a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact */
+  #contact img {
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 12px;
+  }
+  
+  #contact a {
+    font-weight: bold;
+    color: #34495e;
+    text-decoration: none;
+  }
+  
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Resume section */
+  #resume {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #resume a {
+    background: #2ecc71;
+    padding: 12px 24px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+  }
+  
+  #resume a:hover {
+    background: #27ae60;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .fade-in-delay {
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.3s;
+  }
+  
